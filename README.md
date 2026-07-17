@@ -14,61 +14,61 @@ Mark a Task: Mark a task as "in progress" or "done".
 List Tasks: List all tasks or filter them by status (e.g., todo, in-progress, done).
 
 
-### Installation
+## Installation
 
 
-## Clone the repository:
+### Clone the repository:
 
 
    git clone https://github.com/wasifahhme/task-tracker.git
    cd task-tracker
 
 
-## Build the project with Maven:
+### Build the project with Maven:
 
 
    mvn clean install
 
 
-## Run the application:
+### Run the application:
 
 
    java -jar target/tasktracker-0.0.1-SNAPSHOT.jar <command> [arguments]
 
 
 
-# Usage
+## Usage
 
-## Adding a new task
+### Adding a new task
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar add "Buy groceries"
 Output: Task added successfully (ID: 1)
 
-## Updating a task
+### Updating a task
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar update 1 "Buy groceries and cook dinner"
 Output: Task updated successfully (ID: 1)
 
-## Deleting a task
+### Deleting a task
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar delete 1
 Output: Task deleted successfully (ID: 1)
 
-## Marking a task as in progress
+### Marking a task as in progress
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar mark-in-progress 1
 Output: Task marked as 'in progress' (ID: 1)
 
-## Marking a task as done
+### Marking a task as done
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar mark-done 1
 Output: Task marked as 'done' (ID: 1)
 
-## Listing all tasks
+### Listing all tasks
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar list
 Output: list of all tasks
 
-## Listing tasks by status
+### Listing tasks by status
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar list todo
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar list in-progress
 java -jar target/tasktracker-0.0.1-SNAPSHOT.jar list done
 
-Project Structure
+## Project Structure
 
 src/main/java/com/wasif/tasktracker/
 ├── TasktrackerApplication.java
@@ -89,7 +89,7 @@ src/main/java/com/wasif/tasktracker/
     ├── TaskNotFoundException.java
     └── InvalidCommandException.java
 
-### Notes
+## Notes
 
 
 Tasks are stored in a file called tasks.json in the folder where you run the application. This file is created automatically the first time you add a task.
